@@ -1,0 +1,54 @@
+\documentclass[11pt]{letter}
+\usepackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{lipsum}
+\usepackage{hyperref}
+\colorlet{dkgreen}{green!20!black}  
+\hypersetup{
+  colorlinks=true,
+  allcolors=dkgreen
+}
+
+\address{
+  \begin{tcolorbox}[colback=white,colframe=dkgreen,sharp corners=uphill]
+    \vspace{-0.7in}
+    \begin{minipage}[b]{0.55\textwidth}
+      \colorbox{white}{\includegraphics[height=1.0in]{gmu.png}}
+    \end{minipage}
+    \begin{minipage}{0.50\textwidth}
+      \vspace{0.3in}
+      {\Large \bf \myname}\\
+      {\mytitle}\\
+      {\mydept}\\
+      {\myaddress}\\
+      {\myemail}; {\myweb}
+    \end{minipage}
+  \end{tcolorbox}  
+}
+
+\signature{\myname}
+
+%%% Customizations below
+\newcommand\myname{ThanhVu Nguyen}
+\newcommand\mytitle{Assistant Professor}
+\newcommand\mydept{Department of Computer Science}
+\newcommand\myschool{George Mason University}
+\newcommand\myaddress{Research Hall 356}
+\newcommand\myemail{\href{mailto:tvn@gmu.edu}{tvn@gmu.edu}}
+\newcommand\myweb{\href{https://nguyenthanhvuh.github.io}{nguyenthanhvuh.github.io}}
+
+
+\begin{document}
+\begin{letter}{}
+
+  \date{\today}  
+  \opening{To whom it may concern:}
+
+  \lipsum[2-8]
+
+  \closing{Sincerely,}
+  %\ps{}  %P.S. goes here
+  %\encl{} %Enclosures goes here
+\end{letter}
+\end{document}
