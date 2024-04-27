@@ -10,33 +10,40 @@
   allcolors=dkgreen
 }
 
+
 \address{
   \begin{tcolorbox}[colback=white,colframe=dkgreen,sharp corners=uphill]
-    \vspace{-0.7in}
-    \begin{minipage}[b]{0.55\textwidth}
-      \colorbox{white}{\includegraphics[height=1.0in]{gmu.png}}
+    \vspace{-0.2in}
+    \begin{minipage}[b]{0.40\textwidth}
+      \colorbox{white}{\includegraphics[height=0.8in]{gmu2.png}}
     \end{minipage}
+    \hfill
     \begin{minipage}{0.50\textwidth}
-      \vspace{0.3in}
-      {\Large \bf \myname}\\
-      {\mytitle}\\
-      {\mydept}\\
-      {\myaddress}\\
+      {\large \bf \myname}\\
+      \emph{\mytitle},\\
+      \emph{\myschool}\\
+      %\emph{\myaddress}\\
       {\myemail}; {\myweb}
     \end{minipage}
-  \end{tcolorbox}  
+  \end{tcolorbox}
 }
 
-\signature{\myname}
+\signature{\vspace{-0.5in}
+  \includegraphics[scale=0.5]{signature.png}\\
+  \myname{}}
+
+\signature{\vspace{-0.5in}
+  \includegraphics[scale=0.5]{signature.png}\\
+  \myname{}}
 
 %%% Customizations below
 \newcommand\myname{ThanhVu Nguyen}
-\newcommand\mytitle{Assistant Professor}
+\newcommand\mytitle{Assistant Prof. of Computer Science}
 \newcommand\mydept{Department of Computer Science}
 \newcommand\myschool{George Mason University}
-\newcommand\myaddress{Nguyen Engr \#4430}
-\newcommand\myemail{\href{mailto:tvn@gmu.edu}{tvn@gmu.edu}}
-\newcommand\myweb{\href{https://nguyenthanhvuh.github.io}{nguyenthanhvuh.github.io}}
+\newcommand\myaddress{4400 University Drive, Fairfax, VA 22030}
+\newcommand\myemail{\href{mailto:tvn@gmu.edu}{\texttt{tvn@gmu.edu}}}
+\newcommand\myweb{\href{https://go.gmu.edu/tvn}{\texttt{https://go.gmu.edu/tvn}}}
 
 
 \begin{document}
