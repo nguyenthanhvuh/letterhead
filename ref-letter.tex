@@ -4,6 +4,8 @@
 \usepackage{tcolorbox}
 \usepackage{lipsum}
 \usepackage{hyperref}
+\usepackage{fontawesome}
+
 \colorlet{dkgreen}{green!20!black}  
 \hypersetup{
   colorlinks=true,
@@ -12,12 +14,13 @@
 
 \address{
   \begin{tcolorbox}[colback=white,colframe=dkgreen,sharp corners=uphill]
-    \vspace{-0.3in}
-    \begin{minipage}[b]{0.4\textwidth}
-      \colorbox{white}{\includegraphics[height=1.3in]{gmu3.png}}
+    \vspace{-0.4in}
+    \begin{minipage}[b]{0.35\textwidth}
+      \colorbox{white}{\includegraphics[height=1.2in]{gmu3.png}}
     \end{minipage}
     \hfill
-    \begin{minipage}{0.5\textwidth}
+    \begin{minipage}{0.6\textwidth}
+      \vspace{-0.7in}
       {\Large \bf \myname}\\
       \emph{\mytitle}\\
       \emph{\myschool}\\
@@ -41,8 +44,8 @@
 \newcommand\mydept{Department of Computer Science}
 \newcommand\myschool{George Mason University}
 \newcommand\myaddress{4400 University Drive, Fairfax, VA 22030}
-\newcommand\myemail{\href{mailto:tvn@gmu.edu}{\texttt{tvn@gmu.edu}}}
-\newcommand\myweb{\href{https://dynaroars.cs.gmu.edu}{\texttt{https://dynaroars.cs.gmu.edu}}}
+\newcommand\myemail{\faEnvelopeO{} \href{mailto:tvn@gmu.edu}{\texttt{tvn@gmu.edu}}}
+\newcommand\myweb{\faLaptop{}  \href{https://dynaroars.cs.gmu.edu}{\texttt{dynaroars.cs.gmu.edu}}}
 
 
 \begin{document}
